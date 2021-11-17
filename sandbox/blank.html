@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch Pad</title>
+
+    <script src="../content-script.js" type="text/javascript" sandbox="true" defer></script>
+    <link rel="stylesheet" href="../content-script.css">
+    <style>
+        body, iframe {
+            width: 100vw;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            margin: 0;
+            border: none;
+        }
+        div#history {
+            display: none;
+            position: absolute;
+            width: 250px;
+            height: 70%;
+            top: 10%;
+            right: 50px;
+            background: white;
+            border-radius: 3px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe id="codex-sandbox" src="sandbox.html"></iframe>
+    <div id="history"></div>
+</body>
+
+</html>

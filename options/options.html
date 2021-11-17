@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Codex | Options</title>
+
+    <link rel="stylesheet" href="./options.css">
+    <script src="./options.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Extension Options</h1>
+        <div>
+            <div class="option">
+                <h3>OpenAI API Key</h3>
+                <p>Enter your OpenAI API key. If you do not currently have a key, you can apply for one at <a
+                        href="https://openai.com">openai.com</a></p>
+                <input id="api-key" type="password">
+            </div>
+            <div class="option">
+                <h3>Sanitize Codex completions for XSS</h3>
+                <p>This extension involves executing Javascript returned by Codex into your active tab. You can
+                    otionally sanitize the scripts before executing
+                    to prevent possible <a href="http://en.wikipedia.org/wiki/Cross-site_scripting">XSS attacks</a>.
+                    Uses the <a href="https://github.com/leizongmin/js-xss">xss</a> library.
+                </p>
+                <div class="checkbox-wrapper">
+                    <input id="sanitize-xss" type="checkbox">
+                    <label for="sanitize-xss">Sanitize XSS</label>
+                </div>
+            </div>
+        </div>
+        <div class="btn-wrapper">
+            <button id="save">Save</button>
+        </div>
+    </div>
+</body>
+
+</html>

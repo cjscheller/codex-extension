@@ -1,0 +1,33 @@
+{
+    "name": "Codex Extension",
+    "description": "Run OpenAI's Codex in-browser",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {},
+    "options_page": "options/options.html",
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "background": {
+        "scripts": ["modules/xss.min.js", "background.js"],
+        "persistent": false
+    },
+    "icons": {
+        "16": "assets/icons/icon.png",
+        "48": "assets/icons/icon.png",
+        "128": "assets/icons/icon.png"
+    },
+    "sandbox": {
+        "pages": ["sandbox/sandbox.html"]
+    },
+    "web_accessible_resources": [ "assets/img/page.png" ],
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+C",
+                "mac": "Command+MacCtrl+C"
+            }
+        }
+    }
+}
