@@ -29,10 +29,10 @@ find all the h1 elements and make them white
 now make them bold
 make all svgs and their paths white
 make the background color a linear gradient from light blue to dark blue
-make the light blue color a bit darker
+make the dark blue color a bit lighter
 ```
 
-(Creating a space game with OpenAI Codex (from OpenAI))[https://player.vimeo.com/video/583550498]
+[Creating a space game with OpenAI Codex (from OpenAI)](https://player.vimeo.com/video/583550498)
 
 ```text
 add this image of a rocketship: https://i1.sndcdn.com/artworks-j8xjG7zc1wmTeO7b-O6l83w-t500x500.jpg
