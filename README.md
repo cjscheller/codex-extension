@@ -1,6 +1,6 @@
-# Codex Extension
+# OpenAI Codex Extension
 
-An experimental Chromium extension for executing [Codex](https://openai.com/blog/openai-codex/) completions in-browser. 
+An experimental Chromium extension for executing [OpenAI Codex](https://openai.com/blog/openai-codex/) completions in-browser. 
 
 Interacts with the OpenAI [Codex Completion API](https://beta.openai.com/docs/api-reference/completions) for generating Javascript code using OpenAI's natural language models.
 
